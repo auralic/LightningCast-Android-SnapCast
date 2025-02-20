@@ -60,6 +60,7 @@ bool SnapCastClient::doStart()
         ClientSettings settings;
 
         settings.server.host = snapserver_ipaddr;
+        settings.player.pcm_device.name = pcm_name;
 
         AixLog::Filter logfilter;
         auto filters = utils::string::split(settings.logging.filter, ',');

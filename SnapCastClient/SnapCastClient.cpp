@@ -72,7 +72,6 @@ int main(int argc, char *argv[])
     init_sig(SIGTERM);
     init_sig(SIGINT);
 
-    // Input ./LightningCastDeviceDemo -h or ./LightningCastDeviceDemo --help
     if(argc == 2 && (strcmp(argv[1], "-h") == 0 || strcmp(argv[1], "--help") == 0))
     {
         std::cout << "Usage: " << argv[0] << " [pcm_name]"  << std::endl;
